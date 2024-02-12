@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  background: #c8dfe1;
+  position: fixed;
+}
+h1 {
+  position: relative;
+  margin-top: 100px;
+  font-size: 40px;
+  border-bottom: 2px solid rgba(95, 93, 93, 0.334);
+  width: 215px;
+  left: 740px;
+  color: orange;
+}
+.main-tooltip {
+  width: 90px;
+  transform: translateX(800px) translateY(25%);
+}
+.main-tooltip .icon {
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.main-tooltip .icon span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.main-tooltip .icon span i {
+  line-height: 60px;
+  font-size: 25px;
+}
+.main-tooltip .icon .fb {
+  position: absolute;
+  top: 0;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.main-tooltip .icon .tw {
+  position: absolute;
+  left: 0;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.main-tooltip .icon .ins {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.main-tooltip .icon .gh {
+  position: absolute;
+  left: 0;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.main-tooltip .icon .yb {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.main-tooltip .icon:hover .fb {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.main-tooltip .icon:hover .tw {
+  top: 8px;
+  left: -130px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.main-tooltip .icon:hover .ins {
+  top: 8px;
+  right: -150px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.main-tooltip .icon:hover .gh {
+  left: -120px;
+  top: 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.main-tooltip .icon:hover .yb {
+  bottom: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.icon .fb:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #14546f;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s;
+}
+.icon .tw:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #85caed;
+  left: 96%;
+  bottom: 13px;
+  transform: translateX(-70%) rotate(45deg);
+  transition: 0.4s;
+}
+.icon .ins:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  background: #be16a5;
+  right: 100px;
+  bottom: 13px;
+  transform: translateX(-70%) rotate(45deg);
+  transition: 0.4s;
+}
+.icon .gh:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #232323;
+  left: 96%;
+  bottom: 13px;
+  transform: translateX(-70%) rotate(45deg);
+  transition: 0.4s;
+}
+.icon .yb:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #da4545;
+  left: 50%;
+  bottom: 29px;
+  transform: translateX(-70%) rotate(45deg);
+  transition: 0.4s;
+}
+.main-tooltip .icon:hover span {
+  color: #fff;
+}
+.main-tooltip .icon:hover span,
+.main-tooltip .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.main-tooltip .facebook:hover span,
+.main-tooltip .facebook:hover .tooltip,
+.main-tooltip .facebook:hover .tooltip:before {
+  background: #3b5999;
+}
+.main-tooltip .twitter:hover span,
+.main-tooltip .twitter:hover .tooltip,
+.main-tooltip .twitter:hover .tooltip:before {
+  background: #46c1f6;
+}
+.main-tooltip .instagram:hover span,
+.main-tooltip .instagram:hover .tooltip,
+.main-tooltip .instagram:hover .tooltip:before {
+  background: #e1306c;
+}
+.main-tooltip .github:hover span,
+.main-tooltip .github:hover .tooltip,
+.main-tooltip .github:hover .tooltip:before {
+  background: #333;
+}
+.main-tooltip .youtube:hover span,
+.main-tooltip .youtube:hover .tooltip,
+.main-tooltip .youtube:hover .tooltip:before {
+  background: #de463b;
+}

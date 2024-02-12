@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  width: 1420px;
+  margin: auto;
+  background: #dfdede33;
+}
+
+body h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 60px 0px 20px 0px;
+  filter: drop-shadow(3px 3px skyblue);
+}
+
+/* pagination start */
+#pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px 60px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.page li {
+  border: 1px solid rgb(6, 6, 5);
+  color: white;
+  margin: 15px 0px;
+  padding: auto;
+  padding: 5px 20px;
+  font-size: 25px;
+  transition: all 0.4s;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page a:hover li {
+  border: 1px solid #ff92f1;
+  color: #ff92f1;
+  border-radius: 5px;
+}
+
+.page a.four li {
+  background: #ff92f1;
+  color: white;
+  border-radius: 5px;
+}
+
+/* pagination end */
+
+/* button start */
+#button {
+  text-align: center;
+  align-items: center;
+}
+
+body h2 {
+  font-size: 50px;
+  text-align: center;
+  padding: 40px 0px 20px 0px;
+  filter: drop-shadow(3px 3px skyblue);
+}
+
+.all-button {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+}
+
+.all-button button {
+  font-size: 30px;
+  margin: 10px;
+  padding: 5px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.btn1 .clr1 {
+  background: rgb(113, 17, 17);
+}
+
+.btn1 .clr2 {
+  background: rgb(103, 23, 127);
+}
+
+.btn1 .clr3 {
+  background: rgb(81, 108, 55);
+}
+
+.btn1 .clr4 {
+  background: rgb(12, 150, 171);
+}
+
+
+.btn2 .clr1 {
+  background: transparent;
+  border: 2px solid green;
+  color: black;
+  transition: all 0.5s;
+}
+
+.btn2 .clr2 {
+  background: transparent;
+  border: 2px solid rgb(50, 46, 175);
+  color: black;
+  transition: all 0.5s;
+}
+
+.btn2 .clr1:hover {
+  background: green;
+  color: white;
+}
+
+.btn2 .clr2:hover {
+  background: rgb(50, 46, 175);
+  color: white;
+}
+
+.btn2 .clr3 {
+  background: green;
+  transition: all 0.5s;
+  border: 2px solid green;
+}
+
+.btn2 .clr4 {
+  background: rgb(12, 150, 171);
+  transition: all 0.5s;
+  border: 2px solid rgb(12, 150, 171);
+}
+
+.btn2 .clr3:hover {
+  background: transparent;
+  border: 2px solid green;
+  color: black;
+}
+
+.btn2 .clr4:hover {
+  background: transparent;
+  color: black;
+  border: 2px solid rgb(12, 150, 171);
+}
+
+
+.btn3 .clr1 {
+  background: rgb(103, 23, 127);
+  box-shadow: 0 8px 16px 0 rgba(195, 23, 211, 0.4), 0 6px 20px 0 rgba(171, 18, 185, 0.29);
+}
+
+.btn3 .clr2 {
+  background: rgb(103, 23, 127);
+  transition: all 0.5s;
+}
+
+.btn3 .clr2:hover {
+  background: rgb(103, 23, 127);
+  box-shadow: 0 8px 16px 0 rgba(195, 23, 211, 0.4), 0 6px 20px 0 rgba(171, 18, 185, 0.29);
+}
+
+.btn3 .clr3 {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background-color: #04AA6D;
+  box-shadow: 0 9px #999;
+}
+
+.btn3 .clr3:hover {
+  background-color: #3e8e41;
+}
+
+.btn3 .clr3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btn3 .clr4 {
+  position: relative;
+  background-color: #380808;
+  color: #FFFFFF;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.btn3 .clr4:after {
+  content: "";
+  background: #9c9a9a;
+  display: block;
+  position: absolute;
+  padding-top: 600px;
+  margin-left: -50px !important;
+  margin-top: -50px;
+  opacity: 0;
+  transition: all 0.8s;
+  width: 100%;
+
+}
+
+.btn3 .clr4:active:after {
+  padding: 0px;
+  margin: 0px;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* button end */
+
+/* multiple columns start */
+.main-colum h3 {
+  text-align: center;
+  column-span: all;
+  font-size: 30px;
+}
+
+.main-colum {
+  margin: 20px 200px;
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 2px solid rgb(16, 188, 245);
+}
+
+/* multiple columns end */
+/* textarea */
+textarea {
+  padding: 10px;
+  margin: 0px 200px 100px 200px;
+  outline: 2px solid rgba(255, 0, 0, 0.884);
+  outline-offset: 10px;
+}
+
+/* end */

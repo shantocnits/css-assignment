@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 2d transform start */
+.cards {
+    background: #d4c2b6;
+    height: 422px;
+}
+
+.cards .card {
+    justify-content: center;
+    display: flex;
+}
+
+.cards h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+.flip {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    background-image: url(../img/images.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    perspective: 800px;
+}
+
+.card .flip .img {
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/images.png); 
+    background-size: cover; 
+    background-position: center;
+    transition: 0.9s;
+}
+
+.card .flip .one:hover {
+    transform: rotateY(45deg); 
+}
+.card .flip .two:hover {
+    transform: rotateX(45deg); 
+}
+.card .flip .three:hover {
+    transform: rotateY(45deg) translateZ(40px);
+}
+.card .flip .three {
+   
+}
+.card .flip .four:hover {
+    transform: rotate(45deg); 
+}
+
+
+
+/* 3D Transform start */
+.main {
+    padding: 50px;
+    background: #d8ccc4;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main-door {
+    height: 300px;
+    width: 250px;
+    border: 15px solid #301d11;
+    position: relative;
+    perspective: 1000px;
+    transform: translateX(295%);
+    margin: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.door {
+    background-color: #7e3102;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left-door {
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    transform-origin: left;
+    transition: 0.9s;
+}
+
+#right-door {
+    top: 0;
+    right: 0;
+    border-left: 1px solid black;
+    transform-origin: right;
+    transition: 0.9s;
+}
+
+.shape {
+    border: 4px solid black;
+    width: 100px;
+    height: 130px;
+}
+
+.knob {
+    width: 5px;
+    height: 50px;
+    background-color: #d7dade;
+    position: absolute;
+}
+
+#left-knob {
+    top: 40%;
+    right: 10px;
+}
+
+#right-knob {
+    top: 40%;
+    left: 10px;
+}
+
+.main-door:hover #left-door {
+    transform: rotateY(-140deg);
+}
+
+.main-door:hover #right-door {
+    transform: rotateY(140deg);
+}
+
+
+
+
+
